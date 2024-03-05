@@ -26,7 +26,7 @@ def main():
     total_outstanding_orders = st.sidebar.number_input('Total Outstanding Orders')
     total_onshift_partners = st.sidebar.number_input('Total Onshift Partners')
     total_busy_partners = st.sidebar.number_input('Total Busy Partners')
-    market_id = st.sidebar.number_input('Market ID')
+    market_id = st.sidebar.number_input('Market ID', min_value=1, max_value=5, step=1)
     order_protocol = st.sidebar.number_input('Order Protocol')
 
     # Combine input features into array
