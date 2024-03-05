@@ -13,6 +13,7 @@ def load_model():
 # Main function
 def main():
     st.title('Delivery Time Prediction')
+    st.subheader('To predict the preparation time of an order from the moment it is received until it is ready for delivery, you can use the following Streamlit code:')
 
     # Sidebar inputs
     st.sidebar.header('Input Features')
