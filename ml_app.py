@@ -26,9 +26,11 @@ def main():
     total_outstanding_orders = st.sidebar.number_input('Total Outstanding Orders')
     total_onshift_partners = st.sidebar.number_input('Total Onshift Partners')
     total_busy_partners = st.sidebar.number_input('Total Busy Partners')
+    market_id = st.sidebar.number_input('Market ID')
+    order_protocol = st.sidebar.number_input('Order Protocol')
 
     # Combine input features into array
-    input_features = np.array([[total_items, min_item_price, max_item_price, subtotal, num_distinct_items, total_outstanding_orders, total_onshift_partners, total_busy_partners]])
+    input_features = np.array([[total_items, min_item_price, max_item_price, subtotal, num_distinct_items, total_outstanding_orders, total_onshift_partners, total_busy_partners, market_id, order_protocol]])
 
     # Load model
     model = load_model()
